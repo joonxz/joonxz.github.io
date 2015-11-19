@@ -1,6 +1,6 @@
 # personal
 
-personal site
+My very simple site
 
 ### Setup
 
@@ -8,10 +8,6 @@ personal site
 - clone this repo down and `cd` into the folder
 - run `npm install`
 - run `roots watch`
-- ???
-- get money
 
 ### Deploying
-
-- If you just want to compile the production build, run `roots compile -e production` and it will build to public.
-- To deploy your site with a single command, run `roots deploy -to XXX` with `XXX` being whichever [ship](https://github.com/carrot/ship#usage) deployer you want to use.
+run `sh deploy.sh` in dev branch. Will need to commit all your changes first from that branch to work

@@ -22,7 +22,7 @@ rm -R ~/Desktop/temp/
 echo "--git add--"
 git add -A
 
-echo "set date to variable"
+echo "--set date to variable--"
 currentDate="$(date)"
 
 echo "--add message to git commit--"
