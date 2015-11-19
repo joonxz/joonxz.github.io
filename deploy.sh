@@ -1,6 +1,3 @@
-echo "--removing contents of public folder--"
-rm -r public/*
-
 echo "--compiling roots--"
 roots compile
 
@@ -16,14 +13,17 @@ git checkout master
 echo "--copy from temp and paste to current dir--"
 cp -r ~/Desktop/temp/. .
 
-echo "--git add--"
-git add -A
+echo "--remove temp dir from desktop--"
+rm -R ~/Desktop/temp/
 
-echo "--git commit--"
-git commit -m "'date'"
+# echo "--git add--"
+# git add -A
 
-echo "--git push--"
-git push
+# echo "--git commit--"
+# git commit -m "'date'"
 
-echo "--switch back to dev branch--"
-git checkout dev
+# echo "--git push--"
+# git push
+
+# echo "--switch back to dev branch--"
+# git checkout dev
