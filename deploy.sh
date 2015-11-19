@@ -1,3 +1,6 @@
+echo "--run npm install--"
+npm install
+
 echo "--compiling roots--"
 roots compile
 
@@ -16,14 +19,17 @@ cp -r ~/Desktop/temp/. .
 echo "--remove temp dir from desktop--"
 rm -R ~/Desktop/temp/
 
-# echo "--git add--"
-# git add -A
+echo "--git add--"
+git add -A
 
-# echo "--git commit--"
-# git commit -m "'date'"
+echo "--add message to git commit--"
+git commit 
 
-# echo "--git push--"
-# git push
+echo "--git push--"
+git push
 
-# echo "--switch back to dev branch--"
-# git checkout dev
+echo "--switch back to dev branch--"
+git checkout dev
+
+echo "--run npm install--"
+npm install
