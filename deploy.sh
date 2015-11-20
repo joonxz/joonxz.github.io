@@ -1,6 +1,9 @@
 echo "--run npm install--"
 npm install
 
+echo "--get current branch--"
+branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+
 echo "--compiling roots--"
 roots compile
 
@@ -32,7 +35,7 @@ echo "--git push--"
 git push
 
 echo "--switch back to dev branch--"
-git checkout dev
+git checkout $branch
 
 echo "--run npm install--"
 npm install
