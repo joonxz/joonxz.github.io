@@ -1,0 +1,18 @@
+
+header
+  .pure-g
+    .pure-u-3-12
+      a(href="http://joonxz.github.com") joonxz.github.io
+        //- img(src="", alt="logo")
+    .pure-u-9-12
+      nav
+        ul
+          li: a(href="www.google.com") Work
+            ul 
+              for post in site.posts
+                li: a(href=post._url)= post.title
+          li: a Experiments
+          li: a Experience
+          li: a Contact
+          li: a Articles
+

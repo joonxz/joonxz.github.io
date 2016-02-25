@@ -1,11 +1,10 @@
-# personal
-
-My very simple site
+# Francis Vargas Personal Site
+Used Roots to create this blog
 
 ### Setup
 
 - make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
-- clone this repo down and `cd` into the folder
+- clone this repo d	own and `cd` into the folder
 - run `npm install`
 - run `roots watch`
 
