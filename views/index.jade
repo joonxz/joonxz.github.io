@@ -1,17 +1,22 @@
 ---
-title: 'Francis Vargas portfolio'
+title: Francis Vargas portfolio
 description: 'My current weaving in the web within Night Agency and personal experiments'
 author: 'francis vargas'
-date: 02/17/2016
-image: 
-url: 'http://www.joonxz.github.io/nightagency'
+date: '02/17/2016'
+image: ''
+src: 'http://www.joonxz.github.io'
 type: article
 _content: false
+_render: true
 ---
 
 extends layout
 
 
 block content
-  p
-    | talk abpiut something interesting here
+  h1 Agency Works
+  .pure-g
+    for post in site.posts.all()
+      .pure-u-1-2
+        img(src="", alt= post.title + ' thumbnail')
+        h2= post.title
