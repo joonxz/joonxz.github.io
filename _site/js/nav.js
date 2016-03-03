@@ -1,17 +1,19 @@
-(function () {
+// (function () {
   
-  var navElems = document.getElementsByClassName('dropdown');
+//   var navElems = document.querySelectorAll('.first-level > li');
 
-  for (var i = 0; i < navElems.length; i++) {
-    navElem = navElems[i];
+//   for (var i = 0; i < navElems.length; i++) {
+//     navElem = navElems[i];
 
-    navElem.addEventListener('mouseenter', function () {
-        this.classList.add('active');
-    });
+//     navElem.addEventListener('mouseover', function () {
+//       if (!this.classList.contains('active')) {
+//         this.classList.add('active');
+//       } 
+//     });
 
-    navElem.addEventListener('mouseleave', function () {
-      this.classList.remove('active');
-    });
-  };
+//     navElem.addEventListener('mouseout', function () {
+//       this.classList.remove('active');
+//     });
+//   };
 
-})();
+// })();

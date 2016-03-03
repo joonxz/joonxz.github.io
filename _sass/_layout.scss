@@ -31,39 +31,49 @@ nav {
     }
   }
 
-  ul.first-level {
+  .first-level {
     position: relative;
     padding: 30px 0;
+
     > li {
       display: inline-block;
-      
-      // dropdown menu 
-      &.dropdown.active {
-        .second-level {
-          display: block;
-        }
-      }
-
+      -webkit-transition: all 150ms;
+      -webkit-transition-timing-function: ease-in;
+      transition: all 150ms;
+      transition-timing-function: ease-in;
+           
       &:hover {
         background-color: $base-red;
 
         a {
           color: #fff;
         }
+
+        &.dropdown .second-level {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
 
     .second-level {
       background-color: $base-red;
-      display: none;
+      opacity: 0;
       padding: 10px 20px 0 0;
       position: absolute;
       min-width: 150px;
       text-decoration: none;
+      visibility: hidden;
+
+      -webkit-transition: all 150ms;
+      -webkit-transition-timing-function: ease-in;
+      transition: all 150ms;
+      transition-timing-function: ease-in;
 
       a {
         color: #fff;
         padding: 0 10px 10px;
+
         &:hover {
           background-color: $base-red;
           font-weight: bold;
@@ -75,7 +85,8 @@ nav {
       }
     }
   }
-}
+} 
+
 
 // .site-nav {
 //     float: right;
