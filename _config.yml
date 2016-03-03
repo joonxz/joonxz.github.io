@@ -1,12 +1,11 @@
 # Site settings
-title: Francis Portfolio Site
-email: fvargas213@.com
-description: |
-  My current weaving in the web within Night Agency and personal experiments
+title: joonxz.github.io
+email: fvargas213@gmail.com
+description:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://joonxz.github.io" # the base hostname & protocol for your site
 twitter_username: 
-github_username:  joonxz
+github_username: 
 
 # Build settings
 markdown: kramdown
