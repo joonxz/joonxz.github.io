@@ -156,8 +156,13 @@ pre {
   .site-title, .site-title:visited {
     color: #424242; }
 
+.logo {
+  display: inline-block; }
+
 nav ul {
   margin: 0; }
+  nav ul li {
+    list-style-type: none; }
   nav ul a {
     display: block;
     padding: 5px 10px; }
@@ -197,8 +202,6 @@ nav .first-level {
       nav .first-level .second-level a:hover {
         background-color: #F82D20;
         font-weight: bold; }
-    nav .first-level .second-level > li {
-      list-style-type: none; }
 
 /**
  * Site footer

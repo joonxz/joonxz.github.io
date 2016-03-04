@@ -19,13 +19,23 @@
     }
 }
 
+.logo {
+  display: inline-block;
+}
+
 nav {
   ul {
     margin: 0;
+    
+    li {
+      list-style-type: none;
+    }
+
     a {
       display: block;
       padding: 5px 10px;
     }
+
     a:hover {
       text-decoration: none;
     }
@@ -44,7 +54,6 @@ nav {
            
       &:hover {
         background-color: $base-red;
-
         a {
           color: #fff;
         }
@@ -78,10 +87,6 @@ nav {
           background-color: $base-red;
           font-weight: bold;
         }
-      }
-
-      > li {
-        list-style-type: none;
       }
     }
   }
