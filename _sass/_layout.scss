@@ -13,7 +13,6 @@
     margin-bottom: 0;
     float: left;
 
-    &,
     &:visited {
         color: $grey-color-dark;
     }
@@ -44,14 +43,18 @@ nav {
   .first-level {
     position: relative;
     padding: 30px 0;
-
-    > li {
-      display: inline-block;
+    
+    >li,
+    a {
       -webkit-transition: all 150ms;
       -webkit-transition-timing-function: ease-in;
       transition: all 150ms;
       transition-timing-function: ease-in;
-           
+    }
+
+    >li {
+      display: inline-block;
+
       &:hover {
         background-color: $base-red;
         a {

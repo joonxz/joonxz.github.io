@@ -153,7 +153,7 @@ pre {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
-  .site-title, .site-title:visited {
+  .site-title:visited {
     color: #424242; }
 
 .logo {
@@ -171,12 +171,14 @@ nav ul {
 nav .first-level {
   position: relative;
   padding: 30px 0; }
-  nav .first-level > li {
-    display: inline-block;
+  nav .first-level > li,
+  nav .first-level a {
     -webkit-transition: all 150ms;
     -webkit-transition-timing-function: ease-in;
     transition: all 150ms;
     transition-timing-function: ease-in; }
+  nav .first-level > li {
+    display: inline-block; }
     nav .first-level > li:hover {
       background-color: #F82D20; }
       nav .first-level > li:hover a {
