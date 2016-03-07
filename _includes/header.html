@@ -1,8 +1,8 @@
 <header class="site-header">
   <div class="wrapper">
     
-    <nav class="row">
-      <ul class="first-level column-8">
+    <nav class="section">
+      <ul class="first-level col span-9-12">
         <li class="dropdown"><a href="">Work</a>
           <ul class="second-level">
             {% for page in site.pages %}
@@ -17,8 +17,8 @@
         <li><a href="">Contact</a></li>
       </ul>
 
-      <div class="logo column-4">
-        <img src="{{ prepend: site.baseurl }}../images/logo.svg" alt="">
+      <div class="logo col span-3-12">
+        <img src="{{ prepend: site.baseurl }}/images/logo.svg" alt="">
       </div>
     </nav>
 

@@ -20,6 +20,8 @@
 
 .logo {
   display: inline-block;
+  width: 56px;
+  text-align: right;
 }
 
 nav {
@@ -31,8 +33,14 @@ nav {
     }
 
     a {
+      color: $base-black;
       display: block;
+      font-size: 24px;
       padding: 5px 10px;
+    }
+    
+    a:visited {
+      color: $base-black;
     }
 
     a:hover {
@@ -73,7 +81,7 @@ nav {
       opacity: 0;
       padding: 10px 20px 0 0;
       position: absolute;
-      min-width: 150px;
+      min-width: 200px;
       text-decoration: none;
       visibility: hidden;
 
@@ -84,6 +92,7 @@ nav {
 
       a {
         color: #fff;
+        font-size: 20px;
         padding: 0 10px 10px;
 
         &:hover {

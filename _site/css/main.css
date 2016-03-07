@@ -109,18 +109,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /**
  * Clearfix
@@ -157,15 +147,21 @@ pre {
     color: #424242; }
 
 .logo {
-  display: inline-block; }
+  display: inline-block;
+  width: 56px;
+  text-align: right; }
 
 nav ul {
   margin: 0; }
   nav ul li {
     list-style-type: none; }
   nav ul a {
+    color: #2D2C2C;
     display: block;
+    font-size: 24px;
     padding: 5px 10px; }
+  nav ul a:visited {
+    color: #2D2C2C; }
   nav ul a:hover {
     text-decoration: none; }
 nav .first-level {
@@ -191,7 +187,7 @@ nav .first-level {
     opacity: 0;
     padding: 10px 20px 0 0;
     position: absolute;
-    min-width: 150px;
+    min-width: 200px;
     text-decoration: none;
     visibility: hidden;
     -webkit-transition: all 150ms;
@@ -200,6 +196,7 @@ nav .first-level {
     transition-timing-function: ease-in; }
     nav .first-level .second-level a {
       color: #fff;
+      font-size: 20px;
       padding: 0 10px 10px; }
       nav .first-level .second-level a:hover {
         background-color: #F82D20;
@@ -417,3 +414,76 @@ nav .first-level {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1%; }
+
+.col:first-child {
+  margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_-2-12 {
+  width: 100%; }
+
+.span_-1-12 {
+  width: 91.58%; }
+
+.span_-0-12 {
+  width: 83.16%; }
+
+.span-9-12 {
+  width: 74.75%; }
+
+.span-8-12 {
+  width: 66.33%; }
+
+.span-7-12 {
+  width: 57.91%; }
+
+.span-6-12 {
+  width: 49.5%; }
+
+.span-5-12 {
+  width: 41.08%; }
+
+.span-4-12 {
+  width: 32.66%; }
+
+.span-3-12 {
+  width: 24.25%; }
+
+.span-2-12 {
+  width: 15.83%; }
+
+.span-1-12 {
+  width: 7.416%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+
+  .span-1-12, .span-2-12, .span-3-12, .span-4-12, .span-5-12, .span-6-12, .span-7-12, .span-8-12, .span-9-12, .span_-0-12, .span_-1-12, .span_-2-12 {
+    width: 100%; } }
