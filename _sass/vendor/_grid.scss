@@ -7,6 +7,7 @@
 
 /*  COLUMN SETUP  */
 .col {
+  box-sizing: border-box;
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1%;
@@ -20,14 +21,14 @@
 .group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF TWELVE  */
-.span_-2-12 {
+.span-12-12 {
 	width: 100%;
 }
 
-.span_-1-12 {
+.span-11-12 {
   	width: 91.58%;
 }
-.span_-0-12 {
+.span-10-12 {
   	width: 83.16%;
 }
 
@@ -68,10 +69,10 @@
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 460px) {
 	.col {  margin: 1% 0 1% 0%; }
     
-    .span-1-12, .span-2-12, .span-3-12, .span-4-12, .span-5-12, .span-6-12, .span-7-12, .span-8-12, .span-9-12, .span_-0-12, .span_-1-12, .span_-2-12 {
+    .span-1-12, .span-2-12, .span-3-12, .span-4-12, .span-5-12, .span-6-12, .span-7-12, .span-8-12, .span-9-12, .span-10-12, .span-11-12, .span-12-12 {
 	width: 100%; 
 	}
 }

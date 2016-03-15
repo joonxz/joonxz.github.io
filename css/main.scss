@@ -25,30 +25,22 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+// animate class for extension purposes
+.animate {
+  -webkit-transition: all 150ms;
+  -webkit-transition-timing-function: ease-in;
+  transition: all 150ms;
+  transition-timing-function: ease-in;
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "vendor/grid"
+  "responsive",
+  "base",
+  "layout",
+  "nav",
+  "syntax-highlighting",
+  "vendor/grid"
 ;

@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
@@ -18,155 +17,6 @@
     }
 }
 
-.logo {
-  display: inline-block;
-  width: 56px;
-  text-align: right;
-}
-
-nav {
-  ul {
-    margin: 0;
-    
-    li {
-      list-style-type: none;
-    }
-
-    a {
-      color: $base-black;
-      display: block;
-      font-size: 24px;
-      padding: 5px 10px;
-    }
-    
-    a:visited {
-      color: $base-black;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-  }
-
-  .first-level {
-    position: relative;
-    padding: 30px 0;
-    
-    >li,
-    a {
-      -webkit-transition: all 150ms;
-      -webkit-transition-timing-function: ease-in;
-      transition: all 150ms;
-      transition-timing-function: ease-in;
-    }
-
-    >li {
-      display: inline-block;
-
-      &:hover {
-        background-color: $base-red;
-        a {
-          color: #fff;
-        }
-
-        &.dropdown .second-level {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-
-    .second-level {
-      background-color: $base-red;
-      opacity: 0;
-      padding: 10px 20px 0 0;
-      position: absolute;
-      min-width: 200px;
-      text-decoration: none;
-      visibility: hidden;
-
-      -webkit-transition: all 150ms;
-      -webkit-transition-timing-function: ease-in;
-      transition: all 150ms;
-      transition-timing-function: ease-in;
-
-      a {
-        color: #fff;
-        font-size: 20px;
-        padding: 0 10px 10px;
-
-        &:hover {
-          background-color: $base-red;
-          font-weight: bold;
-        }
-      }
-    }
-  }
-} 
-
-
-// .site-nav {
-//     float: right;
-//     line-height: 56px;
-
-//     .menu-icon {
-//         display: none;
-//     }
-
-//     .page-link {
-//         color: $text-color;
-//         line-height: $base-line-height;
-
-//         // Gaps between nav items, but not on the first one
-//         &:not(:first-child) {
-//             margin-left: 20px;
-//         }
-//     }
-
-//     @include media-query($on-palm) {
-//         position: absolute;
-//         top: 9px;
-//         right: 30px;
-//         background-color: $background-color;
-//         border: 1px solid $grey-color-light;
-//         border-radius: 5px;
-//         text-align: right;
-
-//         .menu-icon {
-//             display: block;
-//             float: right;
-//             width: 36px;
-//             height: 26px;
-//             line-height: 0;
-//             padding-top: 10px;
-//             text-align: center;
-
-//             > svg {
-//                 width: 18px;
-//                 height: 15px;
-
-//                 path {
-//                     fill: $grey-color-dark;
-//                 }
-//             }
-//         }
-
-//         .trigger {
-//             clear: both;
-//             display: none;
-//         }
-
-//         &:hover .trigger {
-//             display: block;
-//             padding-bottom: 5px;
-//         }
-
-//         .page-link {
-//             display: block;
-//             padding: 5px 10px;
-//         }
-//     }
-// }
 
 
 /**
@@ -225,8 +75,6 @@ nav {
     font-size: 24px;
 }
 
-
-
 /**
  * Posts
  */
@@ -238,36 +86,5 @@ nav {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}

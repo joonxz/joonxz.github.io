@@ -1,6 +1,6 @@
 // (function () {
   
-//   var navElems = document.querySelectorAll('.first-level > li');
+//   var  = document.querySelectorAll('.first-level > li');
 
 //   for (var i = 0; i < navElems.length; i++) {
 //     navElem = navElems[i];
