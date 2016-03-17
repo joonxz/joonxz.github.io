@@ -100,7 +100,7 @@ nav.mobile {
   z-index: 5;
 
   @extend .animate;
-
+  
   &.active {
     opacity: 1;
     visibility: visible;
