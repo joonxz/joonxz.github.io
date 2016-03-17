@@ -1,0 +1,106 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  box-sizing: border-box;
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+
+.col {
+  @include respond-to(461px) {
+    &.span-12-12 {
+      width: 100%;
+    }
+
+    &.span-11-12 {
+        width: 91.58%;
+    }
+    &.span-10-12 {
+        width: 83.16%;
+    }
+
+    &.span-9-12 {
+        width: 74.75%;
+    }
+
+    &.span-8-12 {
+        width: 66.33%;
+    }
+
+    &.span-7-12 {
+        width: 57.91%;
+    }
+
+    &.span-6-12 {
+        width: 49.5%;
+    }
+
+    &.span-5-12 {
+        width: 41.08%;
+    }
+
+    &.span-4-12 {
+        width: 32.66%;
+    }
+
+    &.span-3-12 {
+        width: 24.25%;
+    }
+
+    &.span-2-12 {
+        width: 15.83%;
+    }
+
+    &.span-1-12 {
+        width: 7.416%;
+    }
+  }
+
+  @include respond-small {
+    &.sml-span-1-1 {
+      width: 100%;
+    }
+
+    &.sml-span-1-2 {
+      width: 50%;
+    }
+
+    &.sml-span-1-3 {
+      width: 32.66%;
+    }
+  }
+}
+
+
+// USER Mobile Styles
+.sml-span-1-1,
+.sml-span-1-2,
+.sml-span-1-3 {
+  display: none;
+
+  @include respond-small {
+    display: block;
+  }
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 460px) {
+	.col {  margin: 1% 0 1% 0%; }
+}

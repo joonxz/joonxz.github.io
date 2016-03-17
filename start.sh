@@ -1,1 +1,1 @@
-jekyll serve --watch --trace
+jekyll serve --watch --trace -s src

@@ -125,10 +125,10 @@ nav.mobile {
 
 
 .burger-icon {
-  margin: 20px;
+  margin: 38px 20px;
   position: relative;
   height: 26px;
-  width: 46px;
+  width: 35px;
   
   .slices, 
   .x {
@@ -140,7 +140,7 @@ nav.mobile {
     display: block;
     position: absolute;
     height: 6px;
-    width: 45px;
+    width: 35px;
 
     @extend .animate;
   }
@@ -191,5 +191,4 @@ nav.mobile {
   .x span {
     top: 10px;
   }
-
 }
