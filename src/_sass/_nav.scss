@@ -90,12 +90,14 @@ nav.desktop {
 
 nav.mobile {
   background-color: rgba($base-gray, 0.7);
+  box-sizing: border-box;
+  padding: 150px 0;
   position: absolute;
   height: 100%;
   opacity: 0;
   visibility: hidden;
   width: 100%;
-  z-index: 10;
+  z-index: 5;
 
   @extend .animate;
 
@@ -129,6 +131,7 @@ nav.mobile {
   position: relative;
   height: 26px;
   width: 35px;
+  z-index: 10;
   
   .slices, 
   .x {
