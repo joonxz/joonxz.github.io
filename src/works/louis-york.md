@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Louis York"
-img: 
+proj_thumb: ly-thumb.jpg
 description: blah blah blah
 tag: work
 ---

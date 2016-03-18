@@ -1,4 +1,4 @@
-.animate, nav.desktop .first-level > li,
+.animate, .post-list .proj-thumb a *, .post-list .proj-thumb a .overlay, nav.desktop .first-level > li,
 nav.desktop .first-level a, nav.desktop .first-level .second-level, nav.mobile, .burger-icon span {
   -webkit-transition: all 150ms;
   -webkit-transition-timing-function: ease-in;
@@ -59,16 +59,18 @@ nav.desktop .first-level a, nav.desktop .first-level .second-level, nav.mobile, 
   .col.span-2-12 {
     width: 15.83%; }
   .col.span-1-12 {
-    width: 7.416%; } }
+    width: 7.416%; }
+  .col.show-for-small {
+    display: none; } }
 @media only screen and (max-width: 460px) {
-  .col.sml-span-1-1, .col.sml-span-1-2, .col.sml-span-1-3 {
-    display: block; }
   .col.sml-span-1-1 {
     width: 100%; }
   .col.sml-span-1-2 {
     width: 50%; }
   .col.sml-span-1-3 {
-    width: 32.66%; } }
+    width: 32.66%; }
+  .col.show-for-small {
+    display: block; } }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 460px) {
@@ -234,6 +236,49 @@ pre {
   list-style-type: none;
   margin: 0;
   padding: 0; }
+  .post-list .proj-thumb {
+    position: relative; }
+    .post-list .proj-thumb a {
+      display: block;
+      overflow: hidden;
+      position: relative; }
+      .post-list .proj-thumb a * {
+        transition: all 500ms;
+        -webkit-transition: all 500ms; }
+      .post-list .proj-thumb a img {
+        box-sizing: border-box; }
+      .post-list .proj-thumb a .overlay {
+        position: absolute;
+        background-color: #F82D20;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(200%);
+        transition: all 500ms;
+        -webkit-transition: all 500ms; }
+        .post-list .proj-thumb a .overlay:before {
+          background-image: url("../images/thumb-hover.svg");
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: cover;
+          content: "";
+          display: block;
+          position: absolute;
+          height: 100%;
+          left: -100%;
+          width: 100%; }
+        .post-list .proj-thumb a .overlay h2 {
+          bottom: 10px;
+          color: #fff;
+          position: absolute;
+          right: 20px; }
+      .post-list .proj-thumb a:hover img {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        transform: scale(0.9); }
+      .post-list .proj-thumb a:hover div {
+        transform: translateX(0); }
 
 /**
  * Site footer
@@ -241,7 +286,6 @@ pre {
 .site-footer {
   background-color: #2D2C2C;
   color: #fff;
-  position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%; }
@@ -324,9 +368,6 @@ nav.mobile {
     nav.mobile ul.first-level ul.second-level li a {
       color: #2D2C2C;
       font-size: 24px; }
-
-.burger-wrap {
-  display: none; }
 
 .burger-icon {
   margin: 38px 20px;

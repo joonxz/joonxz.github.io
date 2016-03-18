@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Kiehls In Space"
-img: 
+proj_thumb: space-thumb.jpg
 description: blah blah blah
 tag: work
 ---

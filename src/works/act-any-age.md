@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Act Any Age"
-img: 
+proj_thumb: aaa-thumb.jpg 
 description: blah blah blah
 tag: work
 ---

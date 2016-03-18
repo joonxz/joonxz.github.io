@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Nightagency"
-img: 
+proj_thumb: night-thumb.jpg
 description: blah blah blah
 tag: work
 ---

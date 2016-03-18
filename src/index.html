@@ -9,8 +9,13 @@ layout: default
   <ul class="post-list section">
     {% for page in site.pages  %}
       {% if page.type == 'project' %}
-        <li class= "col span-4-12 sml-span-1-2">
-           {{page.title }}
+        <li class= "col span-4-12 sml-span-1-2 proj-thumb">
+           <a href="">
+              <img src="../images/{{ page.proj_thumb }}" alt="">
+              <div class="overlay">
+                <h2>{{ page.title }}</h2>
+              </div>
+           </a>
         </li>
       {% endif %}
     {% endfor %}

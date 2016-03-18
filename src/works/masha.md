@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Masha"
-img: 
+proj_thumb: masha-thumb.jpg
 description: blah blah blah
 tag: work
 ---

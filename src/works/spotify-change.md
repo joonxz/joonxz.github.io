@@ -2,7 +2,7 @@
 layout: page
 type: project
 title: "Spotify Change"
-img: 
+proj_thumb: spotify-thumb.jpg
 description: blah blah blah
 tag: work
 ---
