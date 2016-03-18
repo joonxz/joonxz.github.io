@@ -1,5 +1,6 @@
 ---
 layout: page
+type: project
 title: "Nightagency"
 img: 
 description: blah blah blah

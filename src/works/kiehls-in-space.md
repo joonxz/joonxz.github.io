@@ -1,5 +1,6 @@
 ---
 layout: page
+type: project
 title: "Kiehls In Space"
 img: 
 description: blah blah blah

@@ -10,7 +10,7 @@
   box-sizing: border-box;
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1%;
+	padding: 1%;
 }
 .col:first-child { margin-left: 0; }
 
@@ -73,6 +73,11 @@
   }
 
   @include respond-small {
+    &.sml-span-1-1,
+    &.sml-span-1-2,
+    &.sml-span-1-3 {
+      display: block;
+    }
     &.sml-span-1-1 {
       width: 100%;
     }
@@ -87,20 +92,7 @@
   }
 }
 
-
-// USER Mobile Styles
-.sml-span-1-1,
-.sml-span-1-2,
-.sml-span-1-3 {
-  display: none;
-
-  @include respond-small {
-    display: block;
-  }
-}
-
-
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 460px) {
-	.col {  margin: 1% 0 1% 0%; }
+	.col {  padding: 1% 0 1% 0%; }
 }

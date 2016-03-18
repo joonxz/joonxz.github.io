@@ -1,5 +1,6 @@
 ---
 layout: page
+type: project
 title: "Act Any Age"
 img: 
 description: blah blah blah
