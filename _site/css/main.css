@@ -75,7 +75,7 @@ nav.desktop .first-level a, nav.desktop .first-level .second-level, nav.mobile, 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 460px) {
   .col {
-    padding: 1% 0 1% 0%; } }
+    padding: 1%; } }
 /**
  * Reset some basic elements
  */
@@ -229,6 +229,12 @@ pre {
   .site-title:visited {
     color: #424242; }
 
+.page-content {
+  margin: 50px 0; }
+
+.page-heading {
+  margin-left: 10px; }
+
 /**
 * Index Post Styles
 */
@@ -284,9 +290,9 @@ pre {
  * Site footer
  */
 .site-footer {
-  background-color: #2D2C2C;
-  color: #fff;
+  border-top: 1px solid #2D2C2C;
   bottom: 0;
+  color: #2D2C2C;
   text-align: center;
   width: 100%; }
   .site-footer p {
@@ -346,7 +352,7 @@ nav.desktop .logo {
     width: 56px; }
 
 nav.mobile {
-  background-color: rgba(180, 180, 180, 0.7);
+  background-color: rgba(180, 180, 180, 0.9);
   box-sizing: border-box;
   padding: 150px 0;
   position: absolute;

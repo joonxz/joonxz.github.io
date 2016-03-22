@@ -17,6 +17,14 @@
     }
 }
 
+.page-content {
+  margin: 50px 0;
+}
+.page-heading {
+  margin-left: 10px;
+}
+
+
 /**
 * Index Post Styles
 */
@@ -101,9 +109,9 @@
  * Site footer
  */
 .site-footer {
-  background-color: $base-black;
-  color: #fff;
+  border-top: 1px solid $base-black;
   bottom: 0;
+  color: $base-black;
   text-align: center;
   width: 100%;
 
