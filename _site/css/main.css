@@ -231,6 +231,9 @@ pre {
 
 .page-content {
   margin: 50px 0; }
+  @media only screen and (max-width: 460px) {
+    .page-content .wrapper {
+      padding: 0 20px; } }
 
 .page-heading {
   margin-left: 10px; }
@@ -257,12 +260,11 @@ pre {
         position: absolute;
         background-color: #F82D20;
         height: 100%;
-        width: 100%;
         top: 0;
         left: 0;
         transform: translateX(200%);
-        transition: all 500ms;
-        -webkit-transition: all 500ms; }
+        width: 100%;
+        transition: all 500ms; }
         .post-list .proj-thumb a .overlay:before {
           background-image: url("../images/thumb-hover.svg");
           background-repeat: no-repeat;
@@ -279,6 +281,12 @@ pre {
           color: #fff;
           position: absolute;
           right: 20px; }
+          @media only screen and (min-width: 461px) and (max-width: 1024px) {
+            .post-list .proj-thumb a .overlay h2 {
+              font-size: 18px; } }
+          @media only screen and (max-width: 460px) {
+            .post-list .proj-thumb a .overlay h2 {
+              font-size: 16px; } }
       .post-list .proj-thumb a:hover img {
         -webkit-filter: blur(2px);
         filter: blur(2px);
@@ -286,6 +294,19 @@ pre {
       .post-list .proj-thumb a:hover div {
         transform: translateX(0); }
 
+@media only screen and (max-width: 460px) {
+  .post-content article {
+    padding-top: 15px; } }
+.post-content article h1 {
+  font-size: 28px; }
+  @media only screen and (min-width: 461px) and (max-width: 1024px) {
+    .post-content article h1 {
+      font-size: 24px; } }
+  @media only screen and (max-width: 460px) {
+    .post-content article h1 {
+      font-size: 24px; } }
+.post-content article em {
+  font-weight: bold; }
 .post-content .button {
   position: relative;
   display: inline-block; }
@@ -384,7 +405,7 @@ nav.mobile {
   opacity: 0;
   visibility: hidden;
   width: 100%;
-  z-index: 5; }
+  z-index: 10; }
   nav.mobile.active {
     opacity: 1;
     visibility: visible; }

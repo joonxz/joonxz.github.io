@@ -19,6 +19,12 @@
 
 .page-content {
   margin: 50px 0;
+
+  @include respond-small {
+    .wrapper {
+      padding: 0 20px;
+    } 
+  }
 }
 .page-heading {
   margin-left: 10px;
@@ -57,15 +63,13 @@
         position: absolute;
         background-color: $base-red;
         height: 100%;
-        width: 100%;
         top: 0;
         left: 0;
-
         transform: translateX(200%);
-
+        width: 100%;
+        
         @extend .animate;
         transition: all 500ms;
-        -webkit-transition: all 500ms;
         
         &:before {
           background-image: url('../images/thumb-hover.svg');
@@ -84,8 +88,14 @@
           bottom: 10px;
           color: #fff;
           position: absolute;
-          
           right: 20px;
+
+          @include respond-medium {
+            font-size: 18px;
+          }
+          @include respond-small {
+            font-size: 16px;
+          }
         }
       }
 
@@ -106,6 +116,30 @@
 }
 
 .post-content {
+  article {
+    @include respond-small {
+      padding-top: 15px;
+    }
+
+    h1 {
+      font-size: 28px;
+
+      @include respond-medium {
+        font-size: 24px;
+      }
+
+      @include respond-small {
+        font-size: 24px;
+      }
+    }
+    em {
+      font-weight: bold;
+    }
+  }
+
+
+    
+
   .button {
     position: relative;
     display: inline-block;
