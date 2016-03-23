@@ -1,4 +1,4 @@
-.animate, .post-list .proj-thumb a *, .post-list .proj-thumb a .overlay, nav.desktop .first-level > li,
+.animate, .post-list .proj-thumb a *, .post-list .proj-thumb a .overlay, .post-content .button a, nav.desktop .first-level > li,
 nav.desktop .first-level a, nav.desktop .first-level .second-level, nav.mobile, .burger-icon span {
   -webkit-transition: all 150ms;
   -webkit-transition-timing-function: ease-in;
@@ -285,6 +285,30 @@ pre {
         transform: scale(0.9); }
       .post-list .proj-thumb a:hover div {
         transform: translateX(0); }
+
+.post-content .button {
+  position: relative;
+  display: inline-block; }
+  .post-content .button a {
+    background-color: #F82D20;
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    z-index: 5; }
+    .post-content .button a:hover {
+      transform: translate(3px, -3px); }
+    .post-content .button a:active {
+      transform: translate(1px, -1px); }
+  .post-content .button:after {
+    background-color: #2D2C2C;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%; }
 
 /**
  * Site footer

@@ -105,6 +105,44 @@
   }
 }
 
+.post-content {
+  .button {
+    position: relative;
+    display: inline-block;
+
+    a {
+      background-color: $base-red;
+      color: #fff;
+      display: inline-block;
+      padding: 8px;
+      position: relative;
+      text-decoration: none;
+      z-index: 5;
+
+      @extend .animate;
+
+      &:hover {
+        transform: translate(3px,-3px);
+      }
+      &:active {
+        transform: translate(1px,-1px);
+      }
+    }
+
+    &:after {
+      background-color: $base-black;
+      content: '';
+      display: block;
+      position: absolute;
+      
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
 /**
  * Site footer
  */
