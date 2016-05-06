@@ -1,4 +1,4 @@
-.animate, .post-list .proj-thumb a *, .post-list .proj-thumb a .overlay, .post-content .button a, nav.desktop .first-level > li,
+.animate, .post.active, .post-list .proj-thumb a *, .post-list .proj-thumb a .overlay, .post-content .button a, nav.desktop .first-level > li,
 nav.desktop .first-level a, nav.desktop .first-level .second-level, nav.mobile, .burger-icon span {
   -webkit-transition: all 150ms;
   -webkit-transition-timing-function: ease-in;
@@ -241,6 +241,10 @@ pre {
 /**
 * Index Post Styles
 */
+.post.active {
+  transition: all 1s;
+  opacity: 0; }
+
 .post-list {
   list-style-type: none;
   margin: 0;

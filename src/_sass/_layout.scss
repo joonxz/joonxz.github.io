@@ -34,6 +34,12 @@
 /**
 * Index Post Styles
 */
+.post.active {
+  @extend .animate;
+  transition: all 1s;
+  opacity: 0;
+}
+
 .post-list {
   list-style-type: none;
   margin: 0;
@@ -41,6 +47,19 @@
 
   .proj-thumb {
     position: relative;
+    // @extend .animate;
+    // transition: all 1s;
+    // transform-origin: top left;
+
+    // &.active {
+    //   padding: 0;
+    //   transform: translate(0, -66px) scale(2.0603);
+    // }
+
+    // &.disabled {
+    //   opacity: 0;
+    //   transition: all 175ms;
+    // }
 
     a {
       display: block;

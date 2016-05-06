@@ -4,14 +4,14 @@
       <ul class="second-level">
         {% for page in site.pages %}
           {% if page.tag == 'work' %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          <li><a class="page-link yui3-pjax" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
     </li>
     <!-- <li><a href="">Experiments</a></li> -->
-    <li><a href="">Experience</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="" class="yui3-pjax">Experience</a></li>
+    <li><a href="" class="yui3-pjax">Contact</a></li>
   </ul>
 </nav>
 

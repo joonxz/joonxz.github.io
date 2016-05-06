@@ -1,4 +1,5 @@
 (function () {
+  "use strict";
   
   var burger = document.querySelector('.burger-icon');
   var mobNav = document.querySelector('nav.mobile');
