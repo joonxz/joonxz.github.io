@@ -1,5 +1,5 @@
 .DS_Store
 node_modules
 public
-_site/**
+_site/**/*
 .sass-cache/**
